@@ -1,0 +1,14 @@
+1.É fundamental porque esse processo acompanha o projeto e suas versões com fotografias, inclusive suas alterações.
+       2.b) git add
+       3. Cria uma "cópia de trabalho" do documento, ao "commita" (registra) essas mudanças (criando uma versão identificada), em caso de conflito, como quando ambos tentam editar a mesma parte do documento.
+       4. c)git revert
+       5.  d)git branch
+       6. O git commit tira a fotográfia das alterações já o git push manuseia e manda as fotos para o git hub
+       7. Na hora de trabalhar cada membro deve realizar um commit das alterações em sua branch após o desenvolvimento, e m membro deve ser designado para mesclar as funcionalidades no branch principal (“main”) usando o método de merge.
+       8. c) git push**
+
+      9. a) git merge**
+
+      10. Em um trabalho, o Git pode ajudar nesse desenvolvimento interpessoal**
+
+

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Harry Potter page</title>
+</head>
+
+<body>
+    <div class="formulario">
+        <h1>Bem vindo a esse mundo mágico</h1>
+        <p>Antes preencha o formúlario para ser um cadastrado!</p>
+
+        <form action="">
+            <fieldset>
+                <legend>Fale conosco</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome">
+                <br>
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+
+                <br>
+                <label for="assunto">Assunto</label>
+                <select name="assunto" id="assunto">
+                    <option value="feedback">Oque espera do nosso site.</option>
+                    <option value="sugest">Alguma pergunta.</option>
+                    <option value="new-project">Oque gosta em Harry Potter.</option>
+                    <option value="mensagem">Como ficou sabendo de nós.</option>
+                </select>
+                <br>
+                <div>
+                    <label for="mensagem">Texto:</label>
+                    <textarea name="mensagem" id="mensagem" cols="82" rows="20"></textarea>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="enviar">Enviar</button>
+        </form>
+        <br><button class="entrar"><a href="inicial.html" target="_blank">Acesse o site aqui!</a></button>
+    </div>
+    <script>
+        function validaForm() {
+            const email = document.getElementById('email');
+            let emailText = email.value.trim();
+            let valido = false;
+            if (emailText.includes("@")) {
+                valido = true;
+            } else {
+                valido = false;
+            }
+            let partesEmail = emailText.split("@");
+            if (partesEmail[0].length >= 7 && partesEmail[0].length <= 127) {
+                valido = true;
+                // console.log("o tamanho está ente 7 e 127");
+            } else {
+                valido = false;
+            }
+            const nome = document.getElementById("name");
+            let nomeText = nome.value.trim();
+            if (nome.length >= 3) {
+                console.log("Nome atende ao tamanho mínimo")
+                valido = true;
+            } else {
+                valido = false;
+            }
+            const textArea = document.getElementById("mensagem");
+            let textTexto = textArea.value.trim();
+            if (textText === "") {
+                valido = true;
+                // console.log("Texto não pode ser vazio!")
+            } else {
+                valido = false;
+            }
+            if (valido){
+                alert("recebemos sua mensagem!")
+            } else{
+            alert("Recebemos sua mensagem!")}
+        }
+        document.addEventListener("submit", function (e) {
+            e.preventDefault();
+            validaForm();
+        })
+    </script>
+
+
+</body>
+
+</html>
