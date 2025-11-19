@@ -14,23 +14,22 @@ body {
 }
 
 .enviar {
-    background-color: rgba(39, 1, 1, 0.532);
+    background-color: rgba(7, 198, 0, 0.798);
+    height: 50px;
+    border-radius: 10px;
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+    font-size: x-large;
 }
+
 
 .enviar:hover {
     color: aliceblue;
 }
 
-.entrar {
-    background-color: rgb(255, 0, 51);
-}
-
-.entrar:hover {
-    color: aliceblue;
-}
-
-.entrar:hover a {
-    color: rgb(255, 255, 255);
+#mensagem{
+    height: 20px;
 }
 
 .inicial {
